@@ -1,0 +1,27 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row class="ion-text-center">
+      <ion-col
+        size-xs="8" offset-xs="2"
+      >
+        <img class="top-image" src="assets/HAHR-01.png">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col
+        size-xs="12" offset-xs="0"
+        size-sm="8" offset-sm="2"
+        size-md="6" offset-md="3"
+        size-lg="6" offset-lg="3"
+      >
+        <app-question
+          [question]="questions[currQuestion-1]"
+        ></app-question>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div>
+    <img class= "bottom-image" src="assets/HA-BTM.png">
+  </div>
+</ion-content>
+
